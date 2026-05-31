@@ -13,6 +13,9 @@ The program outputs:
 - A breakdown of how many of each denomination to give
 """
 
+# Constant message for invalid input
+MSG_INVALID_VALUE = "You cannot enter zero or a negative value."
+
 def main():
     # List of available denominations in descending order (bills first)
     denominations = [100000, 50000, 20000, 10000, 5000, 2000, 1000, 500, 200, 100, 50, 25, 10, 5, 2, 1]  # You can add bills and/or coins if needed
@@ -30,7 +33,7 @@ def main():
     while True:
         total_amount = float(input("Enter the total amount of the purchase: "))
         if total_amount <= 0:
-            print("You cannot enter zero or a negative value.")
+            print(MSG_INVALID_VALUE)
         else:
             break
     
@@ -40,7 +43,7 @@ def main():
     while True:
         payment_amount = float(input("Enter the amount paid by the customer: "))
         if payment_amount <= 0:
-            print("You cannot enter zero or a negative value.")
+            print(MSG_INVALID_VALUE)
         else:
             break
 
