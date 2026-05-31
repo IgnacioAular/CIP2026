@@ -3,6 +3,17 @@ Purchase Simulator with Exact Change
 
 This program simulates a purchase and calculates the exact change
 to give back using available denominations (bills and coins).
+
+The user inputs:
+- total_amount: the total cost of the purchase
+- payment_amount: the amount of money given by the customer
+
+The program outputs:
+- The total change to return
+- A breakdown of how many of each denomination to give
+
+GitHub URL:
+- https://github.com/IgnacioAular/CIP2026/blob/main/final_project.py
 """
 
 # Constant message for invalid input
